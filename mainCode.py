@@ -62,7 +62,7 @@ def main():
                         pygame.time.wait(1000)
 
                         Start_Game(Board)
-                    elif icon1shape != icon2shape and icon1color != icon2color:
+                    elif icon1shape != icon2shape or icon1color != icon2color:
                         pygame.time.wait(1000)
                         Cover_Boxes_Animation(Board, [(first_Selection[0], first_Selection[1]), (x_box, y_box)])
                         Boxes_revealed[first_Selection[0]][first_Selection[1]] = False
